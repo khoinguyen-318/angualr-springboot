@@ -1,0 +1,31 @@
+<div class="row" style="text-align: center;">
+    <h2> List</h2>
+</div>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th> Tên khoáng sản</th>
+            <th> Tên mỏ khoáng sản </th>
+            <th> Trữ lượng</th>
+            <th> Địa chỉ mỏ khoáng sản</th>
+            <th> Dia chi khoang san</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td> {{ employee.tenKhoangSan }} </td>
+            <td> {{ employee.tenMoKs}} </td>
+            <td> {{ employee.truLuong }} </td>
+            <td> {{ employee.diaChiMoKs }} </td>
+            <td> {{ employee.diaChiMoKs }} </td>
+
+            <td>
+                <button (click)="updateEmployee(employee.maKs)" class="btn btn-primary"> Update</button>
+                <button (click)="deleteEmployee(employee.maKs)" class="btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click)="employeeDetails(employee.maKs)" class="btn btn-primary" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

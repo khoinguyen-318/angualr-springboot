@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Update </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> Tên khoáng sản</label>
+                        <input type="text" class="form-control" id="tenKhoangSan" [(ngModel)]="employee.tenKhoangSan" name="tenKhoangSan">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Tên mỏ khoáng sản</label>
+                        <input type="text" class="form-control" id="tenMoKs" [(ngModel)]="employee.tenMoKs" name="tenMoKs">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Trữ lượng</label>
+                        <input type="text" class="form-control" id="truLuong" [(ngModel)]="employee.truLuong" name="truLuong">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Địa chỉ mỏ KS</label>
+                        <input type="text" class="form-control" id="diaChiMoKs" [(ngModel)]="employee.diaChiMoKs" name="diaChiMoKs">
+                    </div>
+                    <div class="form-group">
+                        <label> Địa chỉ KS</label>
+                        <input type="text" class="form-control" id="diaChiMoKs" [(ngModel)]="employee.diaChiMoKs" name="diaChiMoKs">
+                    </div>
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
